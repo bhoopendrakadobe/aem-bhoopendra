@@ -1,0 +1,81 @@
+main .eds-enablement-block {
+  --eds-enablement-accent: #eb1000;
+  --eds-enablement-surface: #1b1b1b;
+  --eds-enablement-on-surface: #fff;
+
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--eds-enablement-surface);
+  color: var(--eds-enablement-on-surface);
+}
+
+main .eds-enablement-block .eds-enablement-block-badge {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background-color: var(--eds-enablement-accent);
+  font-size: var(--body-font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+main .eds-enablement-block .eds-enablement-block-panel {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+main .eds-enablement-block .eds-enablement-block-panel + .eds-enablement-block-panel {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+main .eds-enablement-block .eds-enablement-block-media {
+  line-height: 0;
+}
+
+main .eds-enablement-block .eds-enablement-block-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+main .eds-enablement-block .eds-enablement-block-content > :first-child {
+  margin-top: 0;
+}
+
+main .eds-enablement-block .eds-enablement-block-content h1,
+main .eds-enablement-block .eds-enablement-block-content h2,
+main .eds-enablement-block .eds-enablement-block-content h3 {
+  color: var(--eds-enablement-on-surface);
+}
+
+main .eds-enablement-block .eds-enablement-block-content a.button {
+  border-color: var(--eds-enablement-accent);
+  background-color: var(--eds-enablement-accent);
+  color: var(--eds-enablement-on-surface);
+}
+
+main .eds-enablement-block .eds-enablement-block-content a.button:hover,
+main .eds-enablement-block .eds-enablement-block-content a.button:focus {
+  background-color: #be0d00;
+}
+
+main .eds-enablement-block.session-practice {
+  border-left: 8px solid var(--eds-enablement-accent);
+}
+
+@media (width >= 900px) {
+  main .eds-enablement-block {
+    padding: 40px;
+  }
+
+  main .eds-enablement-block .eds-enablement-block-panel {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
